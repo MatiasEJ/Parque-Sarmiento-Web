@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parque Sarmiento</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link rel="stylesheet" href="myScript.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- No toma las fonts?-->
+        <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cuerpo">
+            <!--BARRA DE NAVEGACION-->    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <h2>Parque Sarmiento Pesas</h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--MENU -->          
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html#historia">El Parque
+                        <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="deporte.html">El deporte</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="calendario.html">
+                        <i class="fa fa-calendar"></i>
+                        Calendario
+                      </a>
+                    </li>
+                  </ul>
+                  <!--ICONOS-->  
+                  <div  class="redesParque">
+                    <a id="faceAnim" href="https://www.facebook.com/LevantamientoOlimpicoParqueSarmiento/" target="_blank"><i class="redesSoc fa fa-facebook"></i></a>
+                    <a href="https://wwww.linkedin.com" target="_blank"><i class="redesSoc fa fa-linkedin"></i></a> 
+                    <a id="instaFoto" onmouseover="playAudio2()" href="https://www.instagram.com/parque_sarmiento_pesas/?hl=es" target="_blank"><i class="redesSoc fa fa-instagram"></i></a> 
+                    <a id="twity" onmouseover="playAudio()" href="https://wwww.twitter.com" target="_blank" ><i class="redesSoc fa fa-twitter" onmouseover="playAudio()"></i></a>
+                  </div>
+                </div>
+        </nav>
+        <!--BARRA DE NAVEGACION-->
+
+            <!--CONTENIDO-->
+            <div class="contenido">
+                <!--INFO Profes-->
+                <header>
+                    <h1 id="profHeader">ENTRENADORES</h1>
+                    <div class="media profeChan">
+                        <img id="imgClaudio" class="mr-3" src="img/chan2.jpg" alt="Generic placeholder image">
+                         <div >
+                            <h5 class="mt-3">"The Boss" Claudio Henschke </h5>
+                            <p>
+                                    <img id="imgMarian"  src="img/marian.jpg" alt="Generic placeholder image">
+                                Lic. Claudio Henschke  profesor de Biomecanica en el Instituto Romero Brest y en el Instituto Superior Gral San Martín GEBA. Director Técnico Nacional 2018 y
+                                entrenador de la Selección Argentina de Levantamiento de Pesas, representante del equipo olimpico de pesas de los Juegos Panamericanos de 1995. 
+                                <div class="mt-3 text-right">
+                                <h5 >"El comandante" Mariano Rodriguez</h5>
+                                <p>
+                                Lic. Mariano Rodriguez con orientacion al Levantamiento Olimpico. Actualmente trabaja en el Club Racing como coach de pesas y entrenador general. Dos veces medalla de plata en los Juegos Nacionales 2014 y 2016.
+                                </p>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                </header>
+                <!--EQUIPO-->
+                <section id="equipo">
+                        <h1>EQUIPO</h1>
+                        <p>Es un equipo de ambos sexos, de edades entre 8 y 30(+) años. Dividido (solo en el plan de entrenamiento) entre competitivo y los que estan aprendiendo el deporte...
+                            todos entrenan en el mismo lugar, en el mismo horario (a excepción de los dias Sabados que es solo para el equipo competitivo) con los mismos elementos.
+                            En el equipo competitivo podemos encontrar a Soledad Santillan, Tatiana Ullua, Federico Romero, Ariel Galeano, Franco Romero, Nayla Almiron y Cintia Cadiz, quienes nos representan nacional e internacionalmente durante todo el año.
+                        </p>
+                </section>
+                <hr>
+                <!--THUMBNAILS-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-thumbnail  tilt" src="img/conelchan.jpg" alt="">
+                            <img class="img-thumbnail  tiltR" src="img/equipoa.jpg" alt="">
+                            <img class="img-thumbnail  tilt" src="img/sole.jpg" alt="">
+                            <img class="img-thumbnail  tiltR" src="img/maxi.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-thumbnail  tilt" src="img/elparque.jpg" alt="">
+                            <img class="img-thumbnail  tiltR" src="img/equipo parque.jpg" alt="">
+                            <img class="img-thumbnail  tilt" src="img/peke.jpg" alt="">
+                            <img class="img-thumbnail  tiltR" src="img/nenu.jpg" alt="Nenu">
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--FOOTER-->  
+      <footer class="align-content-center">
+            <div >
+                <ul id="mapa">
+                    <li>
+                    <a href="index.html">«El parque»</a>
+                    </li>
+                    <li>
+                        <a href="equipo.html"> «Equipo»</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">«Contacto»</a>
+                    </li>
+                    <li>
+                        <a href="deporte.html">«Deporte»</a>
+                    </li>                      
+                    <li>
+                        <a href="calendario.html">«Calendario»</a>
+                    </li>
+                </ul>
+            </div> 
+            <div>
+              <p id="nah">Web por MJ ©(2018) seguinos en:</p>
+              <a class="botonSoc" href="https://wwww.facebook.com" target="_blank"><i class="icon redesSoc fa fa-facebook"></i></a>
+              <a class="botonSoc" href="https://wwww.linkedin.com" target="_blank"><i class="icon redesSoc fa fa-linkedin"></i></a> 
+              <a class="botonSoc" href="https://wwww.instagram.com" target="_blank"><i class="icon redesSoc fa fa-instagram"></i></a> 
+              <a class="botonSoc" href="https://wwww.twitter.com" target="_blank"><i class="icon redesSoc fa fa-twitter"></i></a>
+               
+              
+              
+              
+              
+            </div>
+        </footer>
+            </div>    
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>

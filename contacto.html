@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parque Sarmiento</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+        <!--script Mostrar Entrenador-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("select").change(function () {
+                    $(this).find("option:selected").each(function () {
+                        var optionValue = $(this).attr("id");
+                        if (optionValue) {
+                            $(".box").not("." + optionValue).hide();
+                            $("." + optionValue).show();
+                        } else {
+                            $(".box").hide();
+                        }
+                    });
+                }).change();
+            });
+        </script>
+        <!--SCRIP EMAIL-->
+        <script type="text/javascript">
+            function displayResult() {
+                var y = document.getElementById("subj");
+                z = "ConsultasWEB --> " + y.value;
+                var x = document.getElementById("selecEntrenador");
+                t = x.value
+                document.getElementById("sarasa").action = "mailto:" + t + "?subject=" + z;
+            }
+        </script>
+        <style>
+            .box {
+                text-align: center;
+                color: #fff;
+                padding: 0px;
+                display: none;
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+<body>
+    <div class="cuerpo">
+        <!--BARRA DE NAVEGACION-->    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <h2>Parque Sarmiento Pesas</h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--MENU -->          
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html#historia">El Parque
+                        <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="deporte.html">El deporte</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="calendario.html">
+                        <i class="fa fa-calendar"></i>
+                        Calendario
+                      </a>
+                    </li>
+                  </ul>
+                  <!--ICONOS-->  
+                  <div  class="redesParque">
+                    <a id="faceAnim" href="https://www.facebook.com/LevantamientoOlimpicoParqueSarmiento/" target="_blank"><i class="redesSoc fa fa-facebook"></i></a>
+                    <a href="https://wwww.linkedin.com" target="_blank"><i class="redesSoc fa fa-linkedin"></i></a> 
+                    <a id="instaFoto" onmouseover="playAudio2()" href="https://www.instagram.com/parque_sarmiento_pesas/?hl=es" target="_blank"><i class="redesSoc fa fa-instagram"></i></a> 
+                    <a id="twity" onmouseover="playAudio()" href="https://wwww.twitter.com" target="_blank" ><i class="redesSoc fa fa-twitter" onmouseover="playAudio()"></i></a>
+                  </div>
+                </div>
+        </nav>
+        <!--BARRA DE NAVEGACION-->
+        
+        <!--CONTENIDO--> 
+        <div class="contenido">
+            <!-- Formulario-->
+            <div class="row">            
+                <form class="col xs-6" id="sarasa" role="form" action="MAILTO:" method="post" enctype="text/plain">
+                    <fieldset >
+                        <legend>Contacta a un entrenador:</legend>
+                        <label for="">Nombre: </label><input type="text" name="Nombre " placeholder="Nombre"><br>
+                        <label for="">E-mail: </label><input type="email" name="Direccion de Correo " id="emailTag" placeholder="E-mail"><br>
+                        <label for="">Asunto: </label><input id="subj" type="text" name="Asunto " placeholder="Asunto"><br>
+
+                        
+                        
+                        <div class="row parrEntrenador">
+                            <!-- Seleccion entrenador-->
+                            <div class="col ">
+                                    <select id="selecEntrenador" onchange="displayResult()">
+                                        <option value="seleccion">--Seleccioná entrenador--</option>
+                                        <option id="Claudio" value="Claudio@jotmail.com">Claudio Henshcke</option>
+                                        <option id="Mariano" value="Mariano@gitmauk.com">Tatiana Ullua</option>
+                                        <option id="nenuco" value="nenuco@pornmail.com">Nenuco Romero</option>
+                                    </select>  
+                                <textarea name="Comentarios" cols="30" rows="10" placeholder="Tu consulta aqui..."></textarea>
+                                <br>
+                                <button type="submit" class="btn btn-dark">
+                                    <i class="fa fa-paper-plane"></i> Enviar
+                                </button>
+                                
+                            </div>
+                            <!-- INFO ENTRENADOR-->
+                            <div  class="col ">
+                                <div class="Claudio box">
+                                    <p>CLAUDIO Henshcke, entrenador de la seleccion Argentina de Pesas 2018, profesor de biomecanica en el Instituto Romero Brest. 
+                                    </p>
+                                    <a href="https://wwww.facebook.com" target="_blank"><i class="redesSoc fa fa-facebook"></i></a>
+                                    <a href="https://wwww.linkedin.com" target="_blank"><i class="redesSoc fa fa-linkedin"></i></a> 
+                                    <a href="https://wwww.instagram.com" target="_blank"><i class="redesSoc fa fa-instagram"></i></a> 
+                                    <a href="https://wwww.twitter.com" target="_blank"><i class="redesSoc fa fa-twitter"></i></a>
+                                </div>
+                                <div class="Mariano box">
+                                        <p>TATIANA ULLUA 
+                                            Instructora de aerobica, profesora de Educacion Fisica, Crossfiter. Amante de la chocotorta.
+                                        </p>
+                                        <a href="https://wwww.facebook.com" target="_blank"><i class="redesSoc fa fa-facebook"></i></a>
+                                    <a href="https://wwww.linkedin.com" target="_blank"><i class="redesSoc fa fa-linkedin"></i></a> 
+                                    <a href="https://wwww.instagram.com" target="_blank"><i class="redesSoc fa fa-instagram"></i></a> 
+                                    <a href="https://wwww.twitter.com" target="_blank"><i class="redesSoc fa fa-twitter"></i></a>
+                                </div>
+                                <div class="nenuco box">
+                                    <p>NENUCO ROMERO Profesor de Educacion Física, Weightlifting Coach, entrenador de Rugby. A cargo de -ATP training-.
+                                    </p>
+                                    <a href="https://wwww.facebook.com" target="_blank"><i class="redesSoc fa fa-facebook"></i></a>
+                                    <a href="https://wwww.linkedin.com" target="_blank"><i class="redesSoc fa fa-linkedin"></i></a> 
+                                    <a href="https://wwww.instagram.com" target="_blank"><i class="redesSoc fa fa-instagram"></i></a> 
+                                    <a href="https://wwww.twitter.com" target="_blank"><i class="redesSoc fa fa-twitter"></i></a>
+                                </div>
+                            
+                        </div>
+                    
+                    </fieldset>    
+                </form>
+                <!-- Parrafo-->
+                <div class="col xs-6">
+                    <hr>
+                    <p>
+                        Aca podes contactarte con cualquiera de los profes que asisten (y entrenan) en el parque para coordinar clases mas personalizadas o realizar consultas.
+                    </p>
+                    <div class="nenuco box"> 
+                        <img style="transform:scale(.7)"src="img/nenu.jpg" alt="">
+                    </div>
+                    <div class="Mariano box"> 
+                        <img style="transform:scale(.7)"src="img/tati.jpg" alt="">
+                    </div>
+                    <div class="Claudio box"> 
+                        <img style="transform:scale(.7)"src="img/comandante.gif" alt="">
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        <!--FOOTER-->  
+        <footer class="align-content-center">
+            <div >
+                <ul id="mapa">
+                    <li>
+                    <a href="index.html">«El parque»</a>
+                    </li>
+                    <li>
+                        <a href="equipo.html"> «Equipo»</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">«Contacto»</a>
+                    </li>
+                    <li>
+                        <a href="deporte.html">«Deporte»</a>
+                    </li>                      
+                    <li>
+                        <a href="calendario.html">«Calendario»</a>
+                    </li>
+                </ul>
+            </div> 
+            <div>
+              <p id="nah">Web por MJ ©(2018) seguinos en:</p>
+              <a class="botonSoc" href="https://wwww.facebook.com" target="_blank"><i class="icon redesSoc fa fa-facebook"></i></a>
+              <a class="botonSoc" href="https://wwww.linkedin.com" target="_blank"><i class="icon redesSoc fa fa-linkedin"></i></a> 
+              <a class="botonSoc" href="https://wwww.instagram.com" target="_blank"><i class="icon redesSoc fa fa-instagram"></i></a> 
+              <a class="botonSoc" href="https://wwww.twitter.com" target="_blank"><i class="icon redesSoc fa fa-twitter"></i></a>
+               
+              
+              
+              
+              
+            </div>
+        </footer>
+        </div>
+      
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(45deg, rgb(165, 181, 212), rgb(161, 196, 158));
+}
+@import url("https://fonts.googleapis.com/css?family=Expletus+Sans");
+
+
+
+
+.cuerpo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    background: linear-gradient(45deg, rgb(107, 206, 41), rgb(147, 131, 241));
+}
+.navbar{
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+.contenido{
+    padding-top: 57px;
+}
+
+.contenido h3{
+    padding-top: 64px;
+}
+
+/*
+    DEPORTE
+*/
+
+#crono article div.banner{
+    background-image: url(img/viejo.jpg);
+    
+    height: 140px;
+}
+.articulos{
+    margin-left: 200px;
+    display: block;
+    
+}
+.barra{
+    position:fixed;
+    height: 527px;
+    top:56px;
+    
+    background-color: #f1f1f1;
+}
+.barra ul, .barra li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+    background-color: #f1f1f1;
+}
+
+.barra li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.barra li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.barra li a:hover:not(.active) {
+    background-color: dimgrey;
+    color: white;
+}
+
+ul.lista{
+    list-style: none;
+}
+
+ul.lista a{
+    color: white;
+}
+
+
+
+/*
+**  EQUIPO
+*/
+
+
+.img-responsive { 
+    width: 100%;
+}
+
+.img-thumbnail:hover {
+    width: 550px;
+    box-shadow: 0 0 5px 5px rgba(215, 241, 241, 0.5);
+}
+
+.img-thumbnail {
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 2px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 400px;
+    
+}
+.tilt, .tiltR {
+    transition: ease-in-out 0.5s;
+  }
+.tilt:hover {
+            transform: rotate(-10deg);
+  }
+  .tiltR:hover {
+            transform: rotate(10deg);
+  }
+
+img#imgClaudio{
+    left: 10px;
+    width: 200px;
+    
+    border-radius: 15%;
+    margin:15px;
+}
+img#imgMarian{
+    float:right;
+    
+    width: 200px;
+    border-radius: 15%;
+    margin:15px;
+}
+
+.profeMarian, .profeChan{
+    height: 350px;
+
+}
+
+.articulos p{
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#equipo p{
+    padding-left: 25px;
+}
+/*
+***********CONTACTO
+*/
+form{
+    margin: 0 auto auto 0;
+}
+fieldset{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: block;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: rgb(102, 102, 102);
+    border-image: initial;
+}
+legend {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+label{
+    display: inline-block;
+    width: 75px;
+}
+select, textarea{
+    width: 300px;
+
+}
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+    height: 10px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 5px;
+}
+
+.parrEntrenador{
+    padding-right: 15px;
+}
+
+.box img{
+    height: 400px;
+    
+}
+
+
+
+#bioMariano{
+    display: inline;
+}
+
+
+
+h1 {
+    padding: 15px;
+    font-family: 'Expletus Sans', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    background: linear-gradient(90deg, #C4C4C4,#057EB8);
+}
+h2 {
+    color: dimgrey;
+}
+.redesParque i{
+    font-size: 20px;
+}
+.redesParque{
+    
+    display: inline-block;
+}
+
+/*
+    *FOOTER
+*/
+ul#mapa li{
+    display: inline;
+    list-style-type: none;
+}
+ul#mapa a{
+    color:rgb(60, 18, 138);
+}
+#mapa{
+    
+    margin-bottom: 0px;
+}
+
+
+footer{
+    text-align: center;
+    height: 65px;
+    background-color: rgb(198, 202, 209);
+}
+
+footer a{
+    transform: scale(.6);
+}
+
+
+.botonSoc {
+    display: inline-block;
+    border: 2px solid #057EB8;
+    border-radius: 100%;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    background: #e0ebe8;
+    text-decoration: none;
+    font-size: 15px;
+}
+.redesSoc{
+    font-size: 30px;
+    
+}
+.parrEntrenador .redesSoc{
+    color: black;
+}
+
+footer p{
+    display: inline-block;
+}
+
+ /*    CALENDARIO         */ 
+.calendario{
+    transform: scale(.95);
+}
+
+/*COMANDANTE*/
+img#comandante {
+    width: 50px;
+    float: right;
+    top: 900px;
+    right: -10px;
+    position: absolute;
+    z-index: 0;
+    
+    transition-delay: 1s linear;
+    
+
+}
+img#comandante:hover{
+    animation-name: com;
+    animation-duration: 4s;
+    position: relative;
+    display:none;
+
+}
+@keyframes com {
+    0% {
+        top: -20px;
+        left: -50px; 
+    }
+    50% {
+      top: -10px;
+      left: -5px;
+      
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+}
+
+
+.fort{  
+    width: 50px;
+    height: 75px;
+    float: right;
+    top: 900px;
+    right: -10px;
+    position: absolute;
+    z-index: 1;
+    background-color: #e0ebe8;
+    animation: example 5s linear 1s 1;
+    
+}
+@keyframes example{
+    0%{
+
+    }
+    50%{
+
+    }
+
+    100%{
+        display:none;
+        top: 700px;
+        right: -10px;
+        position:fixed;
+    }
+}
+.fort:hover{
+    right: -80px;
+    
+}
+
+/*COMANDANTE*/
+
+/*  
+    Animaciones
+*/
+
+#twity{
+    animation-name: twity;
+    animation-duration: 4s;
+    position: relative;
+
+}
+@keyframes twity {
+    0% {
+        top: -20px;
+        left: -50px; 
+    }
+    50% {
+      top: -10px;
+      left: -5px;
+      
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+}
+
+
+
+
+#instaFoto{
+    animation-name: fotin;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+
+}
+@keyframes fotin {
+    20% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+#instaFoto:hover {
+    animation-name: fotasa;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+
+}
+@keyframes fotasa {
+    20% {
+        transform: scale(0.5);
+        opacity: 0.5;
+        background: white;
+    }
+}
+
+
+#faceAnim{
+    animation-name: caida;
+    animation-duration: 4s;
+    position: relative;
+
+}
+@keyframes caida {
+    0% {
+        top: -20px;
+        
+    }
+    50% {
+      top: 5px;
+      left: 0px;
+      transform: rotate(90deg);
+      
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      transform: rotate(20deg);
+    }
+}
